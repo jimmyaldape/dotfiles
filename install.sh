@@ -38,7 +38,11 @@ mkdir -p ~/.nvm
 git config --global core.excludesfile $DOTFILES/.gitignore_global
 
 # install oh-my-zsh
+echo 'Install oh-my-zsh'
 /bin/bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+rm $HOME/.zshrc
+ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
 
 # Use zsh as default shell.
 chsh -s $(which zsh)
