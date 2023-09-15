@@ -44,8 +44,18 @@ cask 'warp'
 cask 'ngrok'
 cask 'postman'
 cask 'tableplus'
+cask 'gifox'
+cask 'helo'
+cask 'tinkerwell'
 
 # Editors
 cask 'jetbrains-toolbox'
 cask 'sublime-text'
 cask 'visual-studio-code'
+
+# Apps
+cask 'obs'
+cask 'screenflow'
+cask 'raycast'
+cask 'slack'
+cask 'discord'
