@@ -38,14 +38,17 @@ mkdir -p ~/.nvm
 git config --global core.excludesfile $DOTFILES/.gitignore_global
 
 # install oh-my-zsh
-echo 'Install oh-my-zsh'
-/bin/bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# echo 'Install oh-my-zsh'
+# /bin/bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 rm $HOME/.zshrc
 ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
 
 # Use zsh as default shell.
-chsh -s $(which zsh)
+# chsh -s $(which zsh)
+
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jimmy/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # ------------------------------------------------------------------------------
 #  Install Composer dependencies.

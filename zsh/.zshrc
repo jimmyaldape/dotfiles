@@ -14,8 +14,8 @@ plugins=(gh zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Homebrew binaries
-eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(gh completion -s zsh)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(gh completion -s zsh)"
 
 # Nvm
 export NVM_DIR="$HOME/.nvm"
