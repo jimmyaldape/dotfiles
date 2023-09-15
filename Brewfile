@@ -7,6 +7,7 @@ tap 'homebrew/services'
 # Install ZSH
 brew 'zsh'
 brew 'zsh-completions'
+brew 'zsh-syntax-highlighting'
 
 # Utils
 brew 'fzf'
