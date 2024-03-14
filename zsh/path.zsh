@@ -16,7 +16,7 @@ export PATH="/usr/local/share/dotnet:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # JetBrains Toolbox
-export PATH="$HOME/.local/share/JetBrains/Toolbox/bin:/opt/jetbrains/bin:$PATH"
+export PATH="$HOME/.local/share/JetBrains/Toolbox/bin:$HOME/Library/Application Support/JetBrains/Toolbox/scripts:/opt/jetbrains/bin:$PATH"
 
 # Local bin directories
 export PATH="./bin:./vendor/bin:./node_modules/.bin:$PATH"
