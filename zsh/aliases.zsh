@@ -67,6 +67,7 @@ alias a="php artisan"
 alias t="a test"
 alias tf="a test —filter"
 alias pest="./vendor/bin/pest"
+alias stan="./vendor/bin/phpstan"
 alias rl="a route:list"
 alias mfs="a migrate:fresh --seed"
 alias mf="a migrate:fresh"
@@ -87,4 +88,3 @@ alias pint="./vendor/bin/pint"
 
 alias rmlogs="rm storage/logs/laravel-*.log"
 alias fu='a make:filament-user --name "Jimmy A" --email jimmy@aldape.dev --password password -n'
-alias stan="./vendor/bin/phpstan analyse"

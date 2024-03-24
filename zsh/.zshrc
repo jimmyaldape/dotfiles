@@ -1,5 +1,5 @@
 # Global options
-export DOTFILES=$HOME/Code/dotfiles
+export DOTFILES=$HOME/workspace/dotfiles
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR=code
 export GPG_TTY=$(tty)
