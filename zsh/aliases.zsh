@@ -1,7 +1,6 @@
 # Configurations
 alias dotf="cd $DOTFILES && $EDITOR $DOTFILES"
 alias zsh="nano ~/.zshrc"
-alias ohmyzsh="nano ~/.oh-my-zsh"
 alias reload="source $HOME/.zshrc"
 alias shorts="cat ~/.zshrc | grep alias"
 
@@ -59,6 +58,7 @@ alias p="phpstorm ."
 alias dev="npm run dev"
 alias watch="npm run watch"
 alias prod="npm run prod"
+alias build="npm run build"
 alias ci="composer install"
 alias cu="composer update"
 
@@ -71,14 +71,13 @@ alias stan="./vendor/bin/phpstan"
 alias rl="a route:list"
 alias mfs="a migrate:fresh --seed"
 alias mf="a migrate:fresh"
-alias m="a migrate"
 alias tinker="a tinker"
 alias model="a make:model"
 alias controller="a make:controller"
 alias event="a make:event"
 alias listener="a make:listener"
 alias mm="a make:migration"
-alias k="art key:generate"
+alias k="a key:generate"
 alias env="cp .env.example .env"
 alias viewlog='tail -f -n 450 storage/logs/laravel*.log \
                 | grep -i -E \
