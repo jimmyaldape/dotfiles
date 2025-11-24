@@ -27,6 +27,7 @@ alias gpo="git push -u origin"
 alias ga="git add"
 alias gcom="git commit -m"
 alias boop='git commit --allow-empty -m "boop" && git push'
+alias cool='gh pr review --approve'
 alias gt="git tag"
 alias gpt="git push origin --tags"
 alias gb="git branch"
