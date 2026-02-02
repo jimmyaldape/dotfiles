@@ -1,3 +1,5 @@
+alias cook="claude --dangerously-skip-permissions"
+
 # Configurations
 alias dotf="cd $DOTFILES && $EDITOR $DOTFILES"
 alias zsh="nano ~/.zshrc"
@@ -36,6 +38,8 @@ alias checkout="gh pr checkout"
 alias list="gh pr list"
 alias switch="git switch -C"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias approve="gh pr review --approve"
+alias draft="gh pr create -d"
 
 # Utility shorts
 alias h="history | tail -10"
@@ -88,3 +92,12 @@ alias pint="./vendor/bin/pint"
 
 alias rmlogs="rm storage/logs/laravel-*.log"
 alias fu='a make:filament-user --name "Jimmy A" --email jimmy@aldape.dev --password password -n'
+
+unalias shorts 2>/dev/null
+shorts() {
+  if [ -f ~/.dotfiles/zsh/aliases.zsh ]; then
+    cat ~/.dotfiles/zsh/aliases.zsh
+  else
+    echo "No shorts man!"
+  fi
+}
