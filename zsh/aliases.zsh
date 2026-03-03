@@ -23,7 +23,6 @@ alias wip="git add . && git commit -m 'wip'"
 alias commit="git add . && git commit -m"
 alias push="git push"
 alias pull="git pull"
-alias gcm='git checkout $(git symbolic-ref refs/remotes/origin/HEAD | sed "s@^refs/remotes/origin/@@") && git pull'
 alias gpo="git push -u origin"
 alias ga="git add"
 alias gcom="git commit -m"
@@ -99,4 +98,12 @@ shorts() {
   else
     echo "No shorts man!"
   fi
+}
+
+gcm() {
+  default_branch=$(git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null | sed 's@^refs/remotes/origin/@@')
+  if [ -z "$default_branch" ]; then
+    default_branch="main"
+  fi
+  git checkout "$default_branch" && git pull
 }
