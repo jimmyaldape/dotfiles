@@ -99,7 +99,7 @@ shorts() {
     echo "No shorts man!"
   fi
 }
-
+unalias gcm 2>/dev/null
 gcm() {
   default_branch=$(git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null | sed 's@^refs/remotes/origin/@@')
   if [ -z "$default_branch" ]; then
